@@ -5,7 +5,6 @@
         <title>Home</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
-        
     </head>
     <body>
         <div class="menu">
@@ -22,6 +21,9 @@
 
         <div class="content">
         <h1>Home</h1>
+        <div class = "slide-card">
+            <h1>Mission</h1>
+        </div>
         <h3><i>Our Mission: </i></h3> 
         <p>Provide the everyone with the academic tutoring and help they need to succeed in school. </p>
         <p>If you're interested, fill out this form: </p>
@@ -29,8 +31,24 @@
         
         
         <div class="footer">
-            Created by the Science Hill Coding team and Ryan Zheng
+            
         </div>
+
+        <footer id="footerReal">
+            Created by the Science Hill Coding team and Ryan Zheng
+        </footer>
     </body>
+    <script>
+        document.addEventListener('mousemove', function(e){
+            const x = e.pageX / window.innerWidth;
+            const y = e.pageY / window.innerHeight;
+            const color1 = [255,0,0];
+            const color2 = [0, 0, 255];
+            const r = Math.round(color1[0]*(1-y)+color1[0]*y);
+            const g = Math.round(color1[1] * (1-x) + color1[1] * x);
+            const b = Math.round(color1[2] * (1-x) + color1[2] * y);
+            document.body.style.background = 'rgb($(r),$(g),$(b)';
+        });
+    </script>
     
 </html>

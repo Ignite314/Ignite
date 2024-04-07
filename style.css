@@ -4,7 +4,9 @@
     
 }
 body{
-    background-color: #eee;
+    /**background: linear-gradient(to bottom, rgb(255, 255, 0), rgb(0, 255, 255)) ;**/
+    background:rgb(0, 255, 255);
+    background-repeat: no-repeat;
 }
 @font-face {
     font-family: Nunito;
@@ -22,6 +24,7 @@ body{
     padding: 20px 20px;
     vertical-align: middle;
 }
+
 p {
     padding: 20px 20px;
     font-family: Nunito;
@@ -69,6 +72,18 @@ div li img{
     height: 100px;
     padding: 0 20px;
 }
+.slide-card{
+    display:inline-block;
+    background-color: aqua;
+    border-color:#1e1e1e;
+    border-style: double;
+    padding: 5%;
+    border-radius: 5px;
+}
+.slide-card:hover{
+    transform: scale(1.1, 1.1);
+    flood-color: aliceblue;
+}
 .content{
 
     background-color: greenyellow;
@@ -76,7 +91,17 @@ div li img{
 .footer{
     
     background-color: pink;
+    
 }
 ul li a:hover{
     color: #eee;
+}
+
+#footerReal{
+    margin-top: 2%;
+    
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    background-color: pink;
 }
