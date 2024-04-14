@@ -25,6 +25,13 @@ body{
     vertical-align: middle;
 }
 
+.menu{
+    position:sticky;
+    height: 50px;
+    top: 0;
+}
+
+
 p {
     padding: 20px 20px;
     font-family: Nunito;
@@ -37,6 +44,7 @@ nav{
     width: 100%;
     height: 50px;
     background-color: #fff;
+    overflow:auto;
 }
 ul {
 
@@ -45,7 +53,8 @@ ul li{
     list-style: none;
     display: inline-block;
     line-height: 50px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    
 }
 
 ul li a{
@@ -54,15 +63,28 @@ ul li a{
     font-size: 14;    
     color: #1e1e1e;
     padding: 0 20px;
-}
-ul li a img{
-    display: flex;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    vertical-align: middle;
+    transition: color .2s ease;
+
     
 }
+
+ul li a:hover{
+    color: #9dd3dd;
+
+    
+}
+
+
+ul li a img{
+    display: flex; 
+     display: inline-block; 
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+    
+    
+    
+} 
 div li{
     list-style: none;
 }
@@ -86,22 +108,24 @@ div li img{
 }
 .content{
 
-    background-color: greenyellow;
+    background-color: white;
 }
-.footer{
+/*.footer{
     
-    background-color: pink;
+    background-color: lightcyan;
     
-}
-ul li a:hover{
-    color: #eee;
-}
+}*/
+
 
 #footerReal{
     margin-top: 2%;
     
     bottom: 0;
-    width: 100%;
+    /* width: 100%; */
     padding: 2%;
-    background-color: pink;
+    background-color: rgb(182, 255, 255);
+}
+
+.menu .active-page{
+    text-decoration: underline;
 }
