@@ -22,10 +22,19 @@
         <div class="content">
         <h1>Home</h1>
         <div class = "slide-card">
-            <h1>Mission</h1>
+            <div class = "fade-text"><h1>Mission</h1></div>
+            <div class = "new-text"><p>Provide the everyone with the academic tutoring and help they need to succeed in school. </p></div>
+        </div>
+        <div class = "slide-card">
+            <h1>Members</h1>
+        </div>
+        <div class = "slide-card">
+            <h1>Interested?</h1>
+        </div>
+        <div class = "slide-card">
+            <h1>Join our team!</h1>
         </div>
         <h3><i>Our Mission: </i></h3> 
-        <p>Provide the everyone with the academic tutoring and help they need to succeed in school. </p>
         <p>If you're interested, fill out this form: </p>
         </div>
         
@@ -35,10 +44,18 @@
         </div>
 
         <footer id="footerReal">
-            Created by the Science Hill Coding team and Ryan Zheng
+            Credit to the Science Hill web development team, Jouji Pendresen, Ryan Zheng for creating the website
         </footer>
     </body>
     <script>
+        document.querySelector('.fade-text').addEventListener('mouseover', function(){
+            this.style.display = 'none';
+            document.querySelector('.new-text').style.display = 'block';
+        });
+        document.querySelector('.fade-text').addEventListener('mouseleave', function(){
+            this.style.display = 'block';
+            document.querySelector('.new-text').style.display = 'none';
+        });
         document.addEventListener('mousemove', function(e){
             const x = e.pageX / window.innerWidth;
             const y = e.pageY / window.innerHeight;
